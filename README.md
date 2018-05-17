@@ -141,7 +141,7 @@ Baremetrics::getStatusCode(); // 200
 Baremetrics::getReasonPhrase(); // ok
 ```
 
-For php users
+## For php users
 
 ```php5
 $baremetrics = new Baremetrics();
