@@ -1,5 +1,5 @@
 <?php
-namespace Tests;
+namespace Tests\Unit;
 
 use Oseintow\Baremetrics\Baremetrics;
 use Tests\TestCase;
