@@ -45,7 +45,11 @@ Route::get("baremetric_sources",function()
 {
     // If you have "BAREMETRICS_API_KEY" set in your env file then the will be no need to set `setApiKey`
     $apiKey = "xx-xx-x-xx-xx-xx"
-    $response = Baremetrics::setApiKey($apikey)->get("sources");
+    
+    // Use isLiveMode to set your mode to production / sandbox
+    // True for production and false for sandbox
+    // It is false by default
+    $response = Baremetrics::setApiKey($apikey)->isLiveMode(true)->get("sources");
     
     $sourceId = "";
     
@@ -146,7 +150,7 @@ Baremetrics::getReasonPhrase(); // ok
 ```php5
 $baremetrics = new Baremetrics();
 
-$sources = $baremetrics->setApiKey("xxx-xxxx-xxxx-xxx-xx")->get("sources");
+$sources = $baremetrics->isLiveMode(true)->setApiKey("xxx-xxxx-xxxx-xxx-xx")->get("sources");
 
 $sourceId= "123456";
 $plans = $baremetrics->get("{$sourceid}/plans");
