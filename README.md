@@ -71,7 +71,7 @@ Baremetrics::put("resource uri", ["put body"]);
 Baremetrics::delete("resource uri");
 ```
 
-Let use our access token to get products from baremetrics.
+Let use our api key to get plans from baremetrics.
 
 **NB:** You can use this to access any resource on baremetrics (be it plans, subscription, customers, etc)
 
