@@ -148,6 +148,8 @@ Baremetrics::getReasonPhrase(); // ok
 ## For php users
 
 ```php5
+use Oseintow\Baremetrics\Baremetrics;
+
 $baremetrics = new Baremetrics();
 
 $sources = $baremetrics->isLiveMode(true)->setApiKey("xxx-xxxx-xxxx-xxx-xx")->get("sources");
