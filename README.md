@@ -6,7 +6,7 @@ Baremetrics-api is a simple package which helps to integrate baremetrics into yo
 
 Add package to composer.json
 
-    composer require oseintow/baremetrics
+    composer require oseintow/baremetrics-api
     
 **NB**: Create account and Obtain your api_key from baremetrics    
     
